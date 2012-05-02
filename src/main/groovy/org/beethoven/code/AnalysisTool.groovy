@@ -79,12 +79,12 @@ public class AnalysisTool {
         // report
         println "Preparing report.."
         println "Report shows how many commits were done in specified file basing on 'Bug' and 'New Feature' issues"
-        println "${'Bugs'.padRight(4)} | ${'Features'.padRight(8)} | ${'Path'.padRight(5)}"
+        println "${'Bug commits'} | ${'Feature commits'} | ${'Path'.padRight(5)}"
         analysisResult.sourceInfo.values().sort {SourceFileInfo sourceFileInfo -> sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_BUG, issueInfo)}.reverse().each {SourceFileInfo sourceFileInfo ->
             Integer bugCount = sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_BUG, issueInfo);
             Integer featureCount = sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_NEWFEATURE, issueInfo);
             if (bugCount > 0) {
-                println "${bugCount.toString().padLeft(4)} | ${featureCount.toString().padLeft(8)} | '${sourceFileInfo.path}'"
+                println "${bugCount.toString().padLeft(11)} | ${featureCount.toString().padLeft(15)} | '${sourceFileInfo.path}'"
             }
         }
     }
