@@ -1,0 +1,8 @@
+// Mercurial repository absolute path
+repository.path='<path to mercurial repo>'
+// maximum amount of changesets that need to be analyzed
+repository.log.maxchagesets=1000
+// jira parameters
+jira.url='<jira url>'
+jira.username='test user'
+jira.password='test password'
