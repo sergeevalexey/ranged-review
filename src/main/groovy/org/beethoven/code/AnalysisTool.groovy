@@ -79,7 +79,7 @@ public class AnalysisTool {
         // report
         println "Preparing report.."
         println "Report shows how many commits were done in specified file basing on 'Bug' and 'New Feature' issues"
-        println "${'Bug commits'} | ${'Feature commits'} | ${'Path'.padRight(5)}"
+        println "Bug commits | Feature commits | Path"
         analysisResult.sourceInfo.values().sort {SourceFileInfo sourceFileInfo -> sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_BUG, issueInfo)}.reverse().each {SourceFileInfo sourceFileInfo ->
             Integer bugCount = sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_BUG, issueInfo);
             Integer featureCount = sourceFileInfo.countCommitsByIssueType(ISSUE_TYPE_NEWFEATURE, issueInfo);
