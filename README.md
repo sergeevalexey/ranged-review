@@ -46,6 +46,7 @@ Here are Windows based scripts:
 * runtool.bat - runs the tool, takes one required parameter - configuration file path
 
 ##Configuration file##
+<pre><code>
 // Mercurial repository absolute path
 repository.path='<path to mercurial repo>'
 // maximum amount of change sets that need to be analyzed
@@ -54,6 +55,7 @@ repository.log.maxchagesets=1000
 jira.url='<jira url>'
 jira.username='<jira user name>'
 jira.password='<jira password>'
+</code></pre>
 
 ##Report##
 
@@ -66,7 +68,7 @@ Bug commits | Feature commits | Path
           4 |               3 | 'web-app/js/engine.js'
           4 |              19 | 'project.xml'
 ...
-</pre></code>
+</code></pre>
 
 All the files are sorted by amount of bug commits. Sources with 0 bugs are skipped.
 Basing on such a report you can see what sources where "touched" the most because of the bugs, still you can see the amount of features that are applied to the same source file.
