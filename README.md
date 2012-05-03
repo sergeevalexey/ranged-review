@@ -72,7 +72,7 @@ Bug commits | Feature commits | Path
 
 All the files are sorted by amount of bug commits. Sources with 0 bugs are skipped.
 Basing on such a report you can see what sources where "touched" the most because of the bugs, still you can see the amount of features that are applied to the same source file.
-Further conclusions you could do on your own. F.e. review specific source file more precisely, check whether it needs to be refactored or covered by tests. So it gives you possibility to reveal the problems or your source files.
+Further conclusions you could do on your own. F.e. review specific source file more precisely, check whether it needs to be refactored or covered by tests. So it gives you possibility to reveal the problems of your source files.
 
 I hope that you'll find this tool useful for YOU.
 
