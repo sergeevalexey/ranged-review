@@ -30,7 +30,7 @@ Jira have to be available via http and be either publicly available otherwise yo
 In Jira bug ticket has type *Bug*, and feature ticket has type *New Feature*.
 Tool assumes that each commit message should look like:
 <pre><code>(ABC-123) This is my commit</code></pre>
-i.e. at the beginning of the message issue key defined in the round braces that is followed by commit comment.
+i.e. at the beginning of the message issue key should be defined in the round braces that is followed by commit commentary.
 
 ##How it works###
 Initial idea was to analyse sources history within specified period of time (that's why I named tool *ranged-view*). But unfortunately hg4j library that I've used does not support such a feature yet. So tool analyses repository commits from the latest change set on out to the configured maximum number of commits back in history.
