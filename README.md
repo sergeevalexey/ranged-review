@@ -59,14 +59,14 @@ jira.password='<jira password>'
 
 ##Report##
 
-Here how it looks like:
+Here how it looks like (sample Grails project sources):
 <pre><code>
 Bug commits | Feature commits | Path
          56 |              74 | 'grails-app/controllers/CartController.groovy'
          54 |              40 | 'grails-app/controllers/SearchController.groovy'
          50 |              58 | 'grails-app/controllers/DetailsController.groovy'
           4 |               3 | 'web-app/js/engine.js'
-          4 |              19 | 'project.xml'
+          4 |              19 | 'application.properties'
 ...
 </code></pre>
 
