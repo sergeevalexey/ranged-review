@@ -40,6 +40,8 @@ Each commit message is checked to issue id presence and then issue data is fetch
 * Maven 2 or 3 (M2_HOME is configured)
 * Java 6 (JAVA_HOME is configured)
 
+**P.S.** Project uses [hg4j](http://code.google.com/p/hg4j). At the moment of initial project creation version 0.9.0 was not available in any public Maven repository. You need to download and put it into your local repository.
+
 ##How to use##
 Here are Windows based scripts:
 * build.bat - compiles sources and packages them
