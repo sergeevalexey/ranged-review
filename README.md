@@ -50,13 +50,13 @@ Here are Windows based scripts:
 ##Configuration file##
 <pre><code>
 // Mercurial repository absolute path
-repository.path='<path to mercurial repo>'
+repository.path='&lt;path to mercurial repo>'
 // maximum amount of change sets that need to be analyzed
 repository.log.maxchagesets=1000
 // jira parameters
-jira.url='<jira url>'
-jira.username='<jira user name>'
-jira.password='<jira password>'
+jira.url='&lt;jira url>'
+jira.username='&lt;jira user name>'
+jira.password='&lt;jira password>'
 </code></pre>
 
 ##Report##
